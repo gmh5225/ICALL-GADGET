@@ -1,6 +1,6 @@
 # ICALL GADGET ABUSE 
 ### so i was scrolling around in IDA and found this 
-![ Gadget ] (https://cdn.discordapp.com/attachments/1130603399293976797/1204191936303603712/dataptrgadget.png?ex=65d3d622&is=65c16122&hm=5dc4028c16551634d26095909cd045eefbc9a49250cb113b290fe84e62dc28c4&)
+![Gadget](https://cdn.discordapp.com/attachments/1130603399293976797/1204191936303603712/dataptrgadget.png?ex=65d3d622&is=65c16122&hm=5dc4028c16551634d26095909cd045eefbc9a49250cb113b290fe84e62dc28c4&)
 
 # Original ASM
 ```
