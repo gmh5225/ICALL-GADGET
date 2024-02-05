@@ -17,7 +17,7 @@
 ```
 
 # Our code
-## In cpp we need to just get the address to the function then map our shellcode into it but there is a trick here if we do this simply how it is we will corrupt the stack and bluescreen from time to time. To avoid this we will need to repair the stack. So insteaed of returning inside of handler we should be performing the same operations the functions should be doing. I will leave this portion to the user because I dont want to spoonfeed an amazing method of evading the anticheats but remember to look at the original asm of the function and see what we are modifying. SIDE NOTE : If you fix the stack corruption and instead of returning do what the function was intended to do inside of your handler it will appear as nothing has been modified! :)
+## In cpp we need to just get the address to the function then map our shellcode into it but here is where it gets tricky if we do this simply how it is we will corrupt the stack and bluescreen from time to time. To avoid this we will need to repair the stack. So insteaed of returning inside of handler we should be performing the same operations the functions should be doing. I will leave this portion to the user because I dont want to spoonfeed an amazing method of evading the anticheats but remember to look at the original asm of the function and see what we are modifying. SIDE NOTE : If you fix the stack corruption and instead of returning do what the function was intended to do inside of your handler it will appear as nothing has been modified! :)
 ```
  //getting address to function
  FunctionAddress = module + 0xD70C; 
