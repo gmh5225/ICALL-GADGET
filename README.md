@@ -5,7 +5,7 @@
 ## After further inspection we can see that it calls a function called _guard_dispatch_icall_ptr. The icall basically is a jmp to rax so if you do some thinking we can modify this entire function to instead call our handler using shellcode.
 
 # Our Shellcode
-## We are going to copy our shellcode that sets rax to a ptr to our handler function into the function we are wanting to abuse. We want to make sure that when we make our shellcode it is the exact same size of bytes as the code we are modifying. So here is an example of the shellcode I used.
+## We are going to make shellcode that sets rax to a ptr to our handler function inside. That way when the function is called it will execute our shellcode and call our handler. We want to make sure that when we make our shellcode it is the exact same size of bytes as the code we are modifying. So here is an example of the shellcode I used.
 ```
  sub    rsp,0x38
  movabs rax,0xdeadbeef #placeholder for handler
