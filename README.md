@@ -1,7 +1,7 @@
 # ICALL GADGET ABUSE FOR COMMUNICATION
 ## General info: this is in the windows kernel and it will allow us to communicate in our driver without being detected to by anticheats
 ## So I was scrolling around in IDA and found this 
-![Gadget](https://cdn.discordapp.com/attachments/1130603399293976797/1204191936303603712/dataptrgadget.png?ex=65d3d622&is=65c16122&hm=5dc4028c16551634d26095909cd045eefbc9a49250cb113b290fe84e62dc28c4&)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/td0qs48" data-context="false" ><a href="//imgur.com/a/td0qs48"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ## After further inspection we can see that it calls a function called _guard_dispatch_icall_ptr. The icall basically is a jmp to rax so if you do some thinking we can modify this entire function to instead call our handler using shellcode.
 
 # Our Shellcode
